@@ -111,7 +111,7 @@ class Glottologist {
       this.lang = args[0]
       return this.lang
   }
-  render(lang = "auto", context = document.body) {
+  render(lang = "auto", context = document) {
       const elements = context.querySelectorAll("[glot-model]");
       for (let i = 0; i < elements.length; i++) {
           const attr = elements[i].getAttribute("glot-model");
